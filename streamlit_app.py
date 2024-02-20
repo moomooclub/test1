@@ -8,6 +8,9 @@ Hello *world!*
 """)
 
 # Table
+st.write("""
+# Table
+""")
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
   'second column': [10, 20, 30, 40]
@@ -16,9 +19,17 @@ df = pd.DataFrame({
 df
 
 # Random NP
+
+st.write("""
+# Random NP
+""")
 dataframe = np.random.randn(10, 20)
 st.dataframe(dataframe)
 
+
+st.write("""
+# Line Chart
+""")
 # Chart Data
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
@@ -27,6 +38,10 @@ chart_data = pd.DataFrame(
 st.line_chart(chart_data)
 
 # Plot a map
+
+st.write("""
+# Plot a map
+""")
 map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
